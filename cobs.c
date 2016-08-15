@@ -8,8 +8,8 @@
 
 #include "cobs.h"
 
-void cobsEncode(const unsigned char *ptr,
-        unsigned long length, unsigned char *dst)
+void cobsEncode(const uint8_t *ptr,
+        uint32_t length, uint8_t *dst)
 {
     const unsigned char *end = ptr + length;
     unsigned char *code_ptr = dst++;
