@@ -17,8 +17,8 @@
  * writing the output to the location pointed
  * to by "dst".
  */
-void cobsEncode(const unsigned char *ptr,
-unsigned long length, unsigned char *dst);
+void cobsEncode(const uint8_t *ptr,
+uint32_t length, uint8_t *dst);
 
 /*
  * cobsDecode decodes "length" bytes of
@@ -26,7 +26,7 @@ unsigned long length, unsigned char *dst);
  * writing the output to the location pointed
  * to by "dst".
  */
-int32_t cobsDecode(const unsigned char *ptr,
-unsigned long length, unsigned char *dst);
+int32_t cobsDecode(const uint8_t *ptr,
+uint32_t length, uint8_t *dst);
 
 #endif /* COBS_H */
