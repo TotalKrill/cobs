@@ -37,7 +37,7 @@ int32_t cobsDecode(const uint8_t *ptr,
         uint32_t length, uint8_t *dst)
 {
     const uint8_t *end = ptr + length;
-    const int32_t start = dst+1;
+    const int32_t start = (uint32_t)dst+1;
     while (ptr < end && *ptr != 0)
     {
         int i, code = *ptr++;
