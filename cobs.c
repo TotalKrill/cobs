@@ -42,6 +42,9 @@ int32_t cobsDecode(const uint8_t *ptr,
     {
         int i, code = *ptr++;
         for (i=1; ptr<=end && i<code; i++){
+            // check so that there is no zero in the cobsed data.
+            if(*ptr == 0)
+                return -1;
             *dst++ = *ptr++;
         }
         if (code < 0xFF){
